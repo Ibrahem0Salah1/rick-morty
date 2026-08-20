@@ -35,7 +35,7 @@ export default function Hero() {
             Explore Characters
           </Link>
            <Link
-        href="/characters"
+        href="/locations"
          className={cn(
               "truncate font-display text-base font-semibold tracking-tight text-white transition-colors duration-200",
               "hover:text-[#fbdf00]"
