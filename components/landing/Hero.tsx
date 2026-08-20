@@ -42,7 +42,7 @@ export default function Hero() {
             )}
       >
         <span className="flex  gap-2 w-fit bg-[linear-gradient(#fbdf00,#fbdf00)] bg-size-[0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out hover:bg-[length:100%_1px]">
-            Explore more characters
+            Explore Locations
             <span className="transition-transform group-hover:translate-x-0.5">→</span>
         </span>
         
