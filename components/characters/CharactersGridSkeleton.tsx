@@ -1,10 +1,6 @@
-import { SearchInput } from "./SearchInput";
-
-// components/characters/CharactersGridSkeleton.tsx
 export function CharactersGridSkeleton({ count = 8 }: { count?: number }) {
   return (
     <>
-    
     <div className="grid mx-auto max-w-7xl px-4  py-22 mt-16 grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
       {Array.from({ length: count }).map((_, i) => (
         <div key={i} className="overflow-hidden rounded-lg border border-white/10 bg-black/40">

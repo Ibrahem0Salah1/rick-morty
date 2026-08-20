@@ -1,11 +1,9 @@
 "use client"
-
 import { useRef, useCallback, useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { CharacterCard } from "@/components/characters/CharacterCard"
 import { Character } from "@/lib/types/index"
-
 
 interface CharactersSliderProps {
   characters: Character[]
@@ -123,19 +121,19 @@ export function CharactersSlider({ characters }: CharactersSliderProps) {
       <button
         onClick={() => scroll("left")}
         className={cn(
-          "absolute left-0 top-[calc(50%-20px)] -translate-y-1/2 -translate-x-3 hidden lg:flex h-9 w-9 items-center justify-center rounded-full bg-background border border-border/60 text-foreground shadow-sm transition-opacity duration-200",
+          "absolute -left-8 top-[calc(50%-20px)] -translate-y-1/2 -translate-x-3 hidden lg:flex h-9 w-9 items-center justify-center rounded-full  text-center border bg-primary border-border/60 text-foreground shadow-sm transition-opacity duration-200",
           "opacity-0 group-hover/slider:opacity-100",
           page === 0 && "pointer-events-none opacity-0"
         )}
         aria-label="Previous characters"
       >
-        <ChevronLeft className="h-4 w-4" />
+        <ChevronLeft className="h-5 w-5" />
       </button>
 
       <button
         onClick={() => scroll("right")}
         className={cn(
-          "absolute right-0 top-[calc(50%-20px)] -translate-y-1/2 translate-x-3 hidden lg:flex h-9 w-9 items-center justify-center rounded-full bg-background/95 border border-border/60 text-foreground shadow-sm transition-opacity duration-200",
+          "absolute -right-8 top-[calc(50%-20px)] -translate-y-1/2 translate-x-3 hidden lg:flex h-9 w-9 items-center justify-center rounded-full text-center bg-primary border border-border/60 text-foreground shadow-sm transition-opacity duration-200",
           "opacity-0 group-hover/slider:opacity-100",
           page === totalPages - 1 && "pointer-events-none opacity-0"
         )}

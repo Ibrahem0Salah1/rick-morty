@@ -1,6 +1,4 @@
-// components/characters/StatusFilter.tsx
 "use client"
-
 import { useCharctersFilters } from "@/hooks/useFilters"
 import { cn } from "@/lib/utils"
 
@@ -18,7 +16,7 @@ export function StatusFilter() {
     <div
       role="radiogroup"
       aria-label="Filter by status"
-      className="flex items-center gap-1 rounded-full border border-white/10 bg-white/[0.03] p-1 backdrop-blur-sm"
+      className="flex items-center gap-1 rounded-full border border-white/10 bg-white/3 p-1 backdrop-blur-sm"
     >
       {STATUSES.map((s) => {
         const active = status === s.value

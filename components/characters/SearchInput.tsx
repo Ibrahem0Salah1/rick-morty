@@ -1,9 +1,7 @@
 "use client";
-
 import { useRef } from "react";
 import { Search, X, Loader2 } from "lucide-react";
 import { useCharctersFilters } from "@/hooks/useFilters";
-import { useCharacters } from "@/hooks/useCharcters";
 import { Input } from "@/components/ui/input";
 import { useIsFetching } from "@tanstack/react-query"
 export function SearchInput() {
@@ -11,9 +9,7 @@ export function SearchInput() {
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
-  // scoped to the actual products query — true only while a request
-  // this component triggered (via filters) is in flight, not every
-  // query in the app under a loose key prefix
+  // scoped to the actual products query true only while a request
   const isFetching = useIsFetching({ queryKey: ["characters"] }) > 0
 
   function updateQuery(value: string) {

@@ -1,4 +1,3 @@
-// components/locations/LocationCard.tsx
 "use client"
 import Image from "next/image"
 import type { Location } from "@/lib/types/index"

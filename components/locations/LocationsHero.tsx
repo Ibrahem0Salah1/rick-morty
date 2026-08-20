@@ -1,4 +1,3 @@
-// components/locations/LocationsHero.tsx
 export function LocationsHero() {
   return (
     <section className="relative w-full overflow-hidden border-b border-white/10 bg-black py-20">

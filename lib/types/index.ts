@@ -1,4 +1,3 @@
-// lib/types/index.ts
 export type CharactersResult = {
   characters: {
     info: { count: number; pages: number; next: number | null; prev: number | null }

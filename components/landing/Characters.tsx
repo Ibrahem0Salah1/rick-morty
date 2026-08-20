@@ -43,7 +43,7 @@ export async function Characters() {
               "hover:text-[#fbdf00]"
             )}
       >
-        <span className="flex  gap-2 py-4 w-fit bg-[linear-gradient(#fbdf00,#fbdf00)] bg-[length:0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out hover:bg-[length:100%_1px]">
+        <span className="flex  gap-2 py-4 w-fit bg-[linear-gradient(#fbdf00,#fbdf00)] bg-size-[0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out hover:bg-size-[100%_1px]">
             Explore more characters
             <span className="transition-transform group-hover:translate-x-0.5">→</span>
         </span>

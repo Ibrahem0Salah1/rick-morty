@@ -47,7 +47,7 @@ export function CharacterCard({
               "group-hover:text-[#fbdf00]"
             )}
           >
-            <span className="bg-[linear-gradient(#fbdf00,#fbdf00)] bg-[length:0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out group-hover:bg-[length:100%_1px]">
+            <span className="bg-[linear-gradient(#fbdf00,#fbdf00)] bg-size-[0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out group-hover:bg-size-[100%_1px]">
               {character.name}
             </span>
           </h3>

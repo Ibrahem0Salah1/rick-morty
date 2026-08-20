@@ -3,7 +3,7 @@ import { Chakra_Petch, Manrope, Geist_Mono } from "next/font/google"
 import "./globals.css";
 import { Providers } from "./providers";
 import Header from "@/components/shared/Header";
-import { Footer } from "@/components/landing/Footer";
+import { Footer } from "@/components/shared/Footer";
 
 const chakra = Chakra_Petch({
   subsets: ["latin"],

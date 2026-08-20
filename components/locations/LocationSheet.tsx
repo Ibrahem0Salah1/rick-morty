@@ -1,6 +1,4 @@
-// components/locations/LocationSheet.tsx
 "use client"
-
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
@@ -8,11 +6,10 @@ import { useLocationsFilters } from "@/hooks/useFilters"
 import { useLocation } from "@/hooks/useLocation"
 import { useLocationFromCache } from "./useLocationFromCache"
 import Link from "next/link"
-// components/locations/LocationSheet.tsx — swap the data source
 export function LocationSheet() {
   const [{ location: locationId }, setFilters] = useLocationsFilters()
   const isOpen = locationId !== null && locationId !== undefined
-
+//get data from cache, if not get data fresh rqeuesting the api, and setting enabled to useLocation meaninngs it only works if !cached
   const cached = useLocationFromCache(locationId)
   const { data, isLoading } = useLocation(locationId, { enabled: !cached })
   const location = cached ?? data?.location
@@ -29,8 +26,6 @@ export function LocationSheet() {
   className="min-w-full sm:min-w-[50%] bg-black/90 p-0 backdrop-blur-xl [&>button]:hidden"
 >
   <div className="relative flex h-full flex-col overflow-y-auto px-6 py-8">
-    {/* now a grandchild of SheetContent, not a direct child —
-        the [&>button]:hidden selector no longer touches it */}
     <button
       onClick={() => setFilters({ location: null })}
       aria-label="Close"

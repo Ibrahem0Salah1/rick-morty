@@ -1,4 +1,3 @@
-// app/characters/characters-view.tsx
 "use client"
 import { useCharacters } from "@/hooks/useCharcters"
 import { CharacterCard } from "@/components/characters/CharacterCard"

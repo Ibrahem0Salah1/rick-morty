@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Logo } from "../shared/Logo"
+import { Logo } from "./Logo"
 const NAV_LINKS = [
   { label: "Characters", href: "/characters" },
   { label: "Locations", href: "/locations" },

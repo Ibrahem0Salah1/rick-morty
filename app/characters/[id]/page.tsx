@@ -35,15 +35,14 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
           
           <Link href={`/locations?location=${character.location.id}`}>
                 <p
-                            className={cn(
-                              "truncate font-display text-[#fbdf00] text-base font-semibold tracking-tight underline transition-colors duration-200",
-                              "hover:text-[#fbdf00]"
-                            )}
-                          >
-                            <span className="bg-[linear-gradient(#fbdf00,#fbdf00)] bg-[length:0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out hover:bg-[length:100%_1px]">
-                              {character.location.name}
-                            </span>
-                          </p>
+                className={cn(
+                    "truncate font-display text-[#fbdf00] text-base font-semibold tracking-tight underline transition-colors duration-200",
+                    "hover:text-[#fbdf00]"
+                )}>
+                    <span className="bg-[linear-gradient(#fbdf00,#fbdf00)] bg-size-[0%_1px] bg-bottom-left bg-no-repeat pb-0.5 transition-[background-size] duration-300 ease-out hover:bg-size-[100%_1px]">
+                        {character.location.name}
+                    </span>
+                </p>
           </Link>
         </div>
       </div>

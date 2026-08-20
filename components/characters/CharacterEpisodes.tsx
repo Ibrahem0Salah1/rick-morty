@@ -1,4 +1,3 @@
-// components/characters/CharacterEpisodes.tsx
 "use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { groupEpisodesBySeason } from "@/lib/episodes/groupBySeason"
@@ -28,7 +27,7 @@ export function CharacterEpisodes({ episodes }: { episodes: { id: string; name: 
             {episodes.map((ep) => (
               <div
                 key={ep.id}
-                className="flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.02] px-4 py-3 transition-colors hover:bg-white/[0.04]"
+                className="flex items-center gap-3 rounded-xl border border-white/5 bg-white/2 px-4 py-3 transition-colors hover:bg-white/4"
               >
                 <span className="font-display text-xs font-semibold text-[#fbdf00]">
                   {ep.episode}

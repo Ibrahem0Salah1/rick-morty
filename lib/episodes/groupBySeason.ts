@@ -1,4 +1,3 @@
-// lib/episodes/groupBySeason.ts
 type Episode = { id: string; name: string; episode: string } // "S01E01"
 
 export function groupEpisodesBySeason(episodes: Episode[]) {
@@ -19,6 +18,6 @@ export function groupEpisodesBySeason(episodes: Episode[]) {
     .sort(([a], [b]) => a - b) // season 1, 2, 3...
     .map(([season, eps]) => ({
       season,
-      episodes: eps.sort((a, b) => a.epNumber - b.epNumber), // e1, e2, e3...
+      episodes: eps.sort((a, b) => a.epNumber - b.epNumber)
     }))
 }

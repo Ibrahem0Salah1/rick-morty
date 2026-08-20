@@ -9,7 +9,7 @@ export const locationsFiltersParsers = {
   location: parseAsInteger.withOptions({
     clearOnDefault: true,
     scroll: false,
-  }), // no default → undefined when no sheet is open
+  })
 }
 
 export const locationsSearchParamsCache = createSearchParamsCache(locationsFiltersParsers)

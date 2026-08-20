@@ -1,10 +1,8 @@
-// app/locations/locations-view.tsx
 "use client"
 import { useInfiniteLocations } from "@/hooks/useLocations"
 import { LocationCard } from "@/components/locations/LocationCard"
 import { LocationSheet } from "@/components/locations/LocationSheet"
 import { LocationsGridSkeleton } from "./LocationsGridSkeleton"
-
 
 export function LocationsView() {
    const {

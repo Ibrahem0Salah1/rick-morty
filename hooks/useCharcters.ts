@@ -26,7 +26,7 @@ export function useCharacters(initialData?: CharactersResult) {
   return useQuery({
     queryKey: ["characters", vars],
     queryFn: () => fetchCharacters(vars),
-    placeholderData: keepPreviousData, // keep old list visible while fetching next
+    placeholderData: keepPreviousData, 
     initialData: isInitialFilters ? initialData : undefined,
   })
 }

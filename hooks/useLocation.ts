@@ -1,8 +1,7 @@
-// hooks/useLocation.ts — only fetches when the cache genuinely misses
 "use client"
 import { useQuery } from "@tanstack/react-query"
 import { fetchLocation } from "@/lib/locations/queries"
-
+//  only fetches when the cache genuinely misses
 export function useLocation(id: number | null | undefined, options?: { enabled?: boolean }) {
   return useQuery({
     queryKey: ["location", id],
