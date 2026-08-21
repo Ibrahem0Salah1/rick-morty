@@ -10,7 +10,6 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { charactersfiltersParsers } from "@/lib/charcters/filters";
-import classNames from "classnames";
 import { useQueryState } from "nuqs";
 
 export function Pagination({
